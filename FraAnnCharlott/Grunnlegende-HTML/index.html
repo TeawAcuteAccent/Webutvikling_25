@@ -21,9 +21,80 @@
   
   <section> <!--Herosection-->
     <h2>Crazy Gaming Deals</h2>
-    <img src="https://picsum.photos/200/300?grayscale" alt="En kul hvalross"> <!--Det er viktig med alt tekst i tillefelle bilde ikke kommer opp for meningsbærende innhold, skal ha tom alt tekst hvis bilde bare er pynt-->
+    <img src="https://picsum.photos/200/300?grayscale" alt=""> <!--Det er viktig med alt tekst i tillefelle bilde ikke kommer opp for meningsbærende innhold, skal ha tom alt tekst hvis bilde bare er pynt-->
     <p>Lorem ipsum dolor sit amet, consectetur magna aliqua.</p>
+    <a href="offers.html">Se tilbud</a> <!--Hvis du skal sende dem til en annen side bruker du <a> tagen, men hvis du skal aktivere noe på siden med javascript eller lignende, så bruker du button-->
   </section>
-</body>
 
+  <main> <!--alle nettsider burde ha en main tag, her skal det viktigste innholde.-->
+    <section> 
+      <h2>Populære Spæll</h2>
+      <article> <!--Dette er produktkortene, de er selvstendige, men hører alle til populære spæll-->
+        <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
+        <h3>Hollow Knight: Silksong</h3>
+        <p>Hollow Knight: Silksong releasing tomorrow!!</p>
+        <p>199,-</p>
+        <a href="">Legg i handlevogn</a>
+      </article>
+
+       <article> 
+        <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
+        <h3>Hollow Knight: Silksong</h3>
+        <p>Hollow Knight: Silksong releasing tomorrow!!</p>
+        <p>199,-</p>
+        <a href="">Legg i handlevogn</a>
+      </article>
+
+       <article>
+        <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
+        <h3>Hollow Knight: Silksong</h3>
+        <p>Hollow Knight: Silksong releasing tomorrow!!</p>
+        <p>199,-</p>
+        <a href="">Legg i handlevogn</a>
+      </article>
+
+       <article> 
+        <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
+        <h3>Hollow Knight: Silksong</h3>
+        <p>Hollow Knight: Silksong releasing tomorrow!!</p>
+        <p>199,-</p>
+        <a href="">Legg i handlevogn</a>
+      </article>
+    </section>
+    
+    <section>
+      <h2>Kategorier</h2>
+      <article> 
+      <h3><a href="action.html">Action</a></h3>
+      </article>
+      <article> 
+      <h3><a href="rpg.html">RPG</a></h3>
+      </article>
+      <article> 
+      <h3><a href="puzzle.html">Puzzle</a></h3>
+      </article>
+      <article> 
+      <h3><a href="platformer.html">Platformer</a></h3>
+      </article>
+    </section>
+  </main>
+
+  <aside>
+  <h4>Meld deg inn i spællklubben</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur magna aliqua</p>
+  <form>
+    <!--Det er to måter å koble label til input:-->
+    <label 
+    >E-post:
+    <input type="email" placeholder="ola.nordman@hiof.no..."/>
+    <input type="submit" value="Mel meg på"/>
+    </label>
+    
+    <label for="age-validation">Over 18</label>
+    <input type="checkbox" id="age-validation"/>
+    <!--id skal være unik-->
+  </form>
+  </aside>
+
+</body>
 </html>
