@@ -22,9 +22,9 @@
   
   <section class="deal-section"> <!--Herosection-->
     <h2>Crazy Gaming Deals</h2>
-    <img src="https://picsum.photos/200/300?grayscale" alt=""> <!--Det er viktig med alt tekst i tillefelle bilde ikke kommer opp for meningsbærende innhold, skal ha tom alt tekst hvis bilde bare er pynt-->
+    <!--<img src="https://picsum.photos/700/500?grayscale" alt="">--> <!--Det er viktig med alt tekst i tillefelle bilde ikke kommer opp for meningsbærende innhold, skal ha tom alt tekst hvis bilde bare er pynt-->
     <p>Lorem ipsum dolor sit amet, consectetur magna aliqua.</p>
-    <a href="offers.html">Se tilbud</a> <!--Hvis du skal sende dem til en annen side bruker du <a> tagen, men hvis du skal aktivere noe på siden med javascript eller lignende, så bruker du button-->
+    <a href="offers.html" class="btn">Se tilbud</a> <!--Hvis du skal sende dem til en annen side bruker du <a> tagen, men hvis du skal aktivere noe på siden med javascript eller lignende, så bruker du button-->
   </section>
 
   <main> <!--alle nettsider burde ha en main tag, her skal det viktigste innholde.-->
@@ -80,7 +80,7 @@
     </section>
   </main>
 
-  <aside>
+  <aside class="side-container">
   <h4>Meld deg inn i spællklubben</h4>
   <p>Lorem ipsum dolor sit amet, consectetur magna aliqua</p>
   <form>
@@ -91,11 +91,14 @@
     <input class="btn" type="submit" value="Meld meg på"/>
     </label>
     
-    <label for="age-validation">Over 18</label>
+    <label class="age-check" for="age-validation">Over 18
     <input type="checkbox" id="age-validation"/>
-    <!--id skal være unik-->
+    </label>
   </form>
   </aside>
 
+ <footer>
+        Webutvikling 2025
+  </footer>
 </body>
 </html>

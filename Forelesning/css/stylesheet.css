@@ -3,9 +3,14 @@
     --basic-red: #6a0404; 
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    height: 100vh;
 }
 
 #global-header{
@@ -40,9 +45,48 @@ a {
 
 /*Hero-section*/
 .deal-section{
+    background-image: url("https://picsum.photos/800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: var(--basic-grey); 
     padding: 1rem;
+    position: relative;
+    height: 33vh;
+    min-height: 200px;
+
+    /*img{
+        width: 100%;          Dette er en grisete måte å gjøre det på. Unngå hvis mulig.
+    }
+
+    h2, p, a{
+       position: absolute;   
+    }
+
+    p{
+        top: 63px;
+    }
+
+    a{
+        top: 160px;
+    }*/
 }
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+    section{
+        h2{
+            text-align: center;
+        }
+        article{
+            margin: 0 auto;
+        }
+    }
+}
+
 
 article{
     margin: 1rem 0;
@@ -63,4 +107,30 @@ article{
     color: #fff;
     padding: 1rem;
     border: none;
+}
+
+.side-container{
+    background-color: var(--basic-grey);
+    padding: 1 rem;
+
+    form{
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer{
+    background-color:#3b333b;
+    color: #fff;
+    padding: 1 rem;
+    min-height: 150px;
 }
