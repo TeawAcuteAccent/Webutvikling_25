@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Fra FontAwesome, Ha eksterne stylesheet-->
+      <link href="icons/css/fontawesome.css" rel="stylesheet" />
+      <link href="icons/css/brands.css" rel="stylesheet" />
+      <link href="icons/css/solid.css" rel="stylesheet" />
+      <link href="icons/css/sharp-thin.css" rel="stylesheet" />
+      <link href="icons/css/sharp-duotone-thin.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <title>Forside - Dataspæll</title>
   </head>
@@ -17,6 +25,8 @@
       <ul> <!--Uordnet liste-->
         <li><a href="index.html">Hjem</a></li>
         <li><a href=products.html>Produkter</a></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-bars"></i></li>
       </ul>
     </nav>
   </header>
@@ -31,7 +41,7 @@
   <main> <!--alle nettsider burde ha en main tag, her skal det viktigste innholde.-->
     <section class="flex-container flex-grow"> 
       <h2>Populære Spæll</h2>
-      <article> <!--Dette er produktkortene, de er selvstendige, men hører alle til populære spæll-->
+      <article class="product-card"> <!--Dette er produktkortene, de er selvstendige, men hører alle til populære spæll-->
         <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
         <h3>Hollow Knight: Silksong</h3>
         <p>Hollow Knight: Silksong releasing tomorrow!!</p>
@@ -39,7 +49,7 @@
         <a href="product.html" class="btn">Se produkt</a>
       </article>
 
-       <article> 
+       <article class="product-card"> 
         <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
         <h3>Hollow Knight: Silksong</h3>
         <p>Hollow Knight: Silksong releasing tomorrow!!</p>
@@ -47,7 +57,7 @@
         <a href="product.html" class="btn">Se produkt</a>
       </article>
 
-       <article>
+       <article class="product-card">
         <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
         <h3>Hollow Knight: Silksong</h3>
         <p>Hollow Knight: Silksong releasing tomorrow!!</p>
@@ -55,7 +65,7 @@
         <a href="product.html" class="btn">Se produkt</a>
       </article>
 
-       <article> 
+       <article class="product-card"> 
         <img src="https://picsum.photos/200/300?grayscale" alt="Hollow Knight: Silksong">
         <h3>Hollow Knight: Silksong</h3>
         <p>Hollow Knight: Silksong releasing tomorrow!!</p>
@@ -66,16 +76,16 @@
     
     <section class="flex-container flex-grow">
       <h2>Kategorier</h2>
-      <article class="grow-1"> 
+      <article class="grow-1 category-card"> 
       <h3><a href="action.html">Action</a></h3>
       </article>
-      <article> 
+      <article class="category-card"> 
       <h3><a href="rpg.html">RPG</a></h3>
       </article>
-      <article> 
+      <article class="category-card"> 
       <h3><a href="puzzle.html">Puzzle</a></h3>
       </article>
-      <article class="grow-2"> 
+      <article class="grow-2 category-card"> 
       <h3><a href="platformer.html">Platformer</a></h3>
       </article>
     </section>
