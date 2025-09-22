@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Gabarito:wght@400..900&family=Hind:wght@300;400;500;600;700&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    font-family: "Funnel sans", sans-serif ;
+    margin: 0;
+
+}
+
+#page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#global-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #8f4c68;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#global-header nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+#global-header nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#global-header nav ul li a{
+    color: #000000;
+}
+
+#mainlogo{
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    color: #fff5ba;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+main{
+     grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+     border: 1px solid #7a7a7a;
+}
+
+aside{
+    padding: 0.2rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+     border: 1px solid #7a7a7a;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #7a7a7a;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    article{
+        min-width: 200px;
+        margin: 1rem;
+        border: 1px solid #7a7a7a;
+        text-align: center;
+    }
+}
